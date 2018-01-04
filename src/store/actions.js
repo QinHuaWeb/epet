@@ -1,17 +1,15 @@
 import {
   requestFirstView,
-  requestClothes,
-  requestFoods,
-  requestHealth,
-  requestToys
+  receive_sorts,
+  receive_shopCart,
+  receive_myEpet
 } from "../api"
 
 import {
   RECEIVE_FIRSTVIEW,
-  RECEIVE_CLOTHES,
-  RECEIVE_FOODS,
-  RECEIVE_HEALTH,
-  RECEIVE_TOYS
+  RECEIVE_SORTS,
+  RECEIVE_SHOPCART,
+  RECEIVE_MYEPET
 } from "./mutations-types"
 
 export default {
@@ -24,39 +22,30 @@ export default {
       }
     })
   },
-  requestClothes ({commit}) {
-    requestClothes().then(response => {
+  requestSorts ({commit}) {
+    requestSorts().then(response => {
       const result = response.data
       if (result.code === 0) {
-        const clothes = result.clothes
-        commit(RECEIVE_CLOTHES,{clothes})
+        const clothes = result.sorts
+        commit(RECEIVE_SORTS,{sorts})
       }
     })
   },
-  requestFoods ({commit}) {
-    requestFoods().then(response => {
+  requestShopCart ({commit}) {
+    requestShopCart().then(response => {
       const result = response.data
       if (result.code === 0) {
-        const foods = result.foods
-        commit(RECEIVE_FOODS,{foods})
+        const shopCart = result.shopCart
+        commit(RECEIVE_SHOPCART,{shopCart})
       }
     })
   },
-  requestHealth ({commit}) {
-    requestHealth().then(response => {
+  requestMyEpet ({commit}) {
+    requestMyEpet().then(response => {
       const result = response.data
       if (result.code === 0) {
-        const health = result.health
-        commit(RECEIVE_HEALTH,{health})
-      }
-    })
-  },
-  requestToys ({commit}) {
-    requestToys().then(response => {
-      const result = response.data
-      if (result.code === 0) {
-        const toys = result.toys
-        commit(RECEIVE_TOYS,{toys})
+        const myEpet = result.myEpet
+        commit(RECEIVE_MYEPET,{myEpet})
       }
     })
   },

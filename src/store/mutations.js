@@ -1,26 +1,21 @@
 import {
   RECEIVE_FIRSTVIEW,
-  RECEIVE_CLOTHES,
-  RECEIVE_FOODS,
-  RECEIVE_HEALTH,
-  RECEIVE_TOYS
+  RECEIVE_SORTS,
+  RECEIVE_SHOPCART,
+  RECEIVE_MYEPET
 } from "./mutations-types"
 
 export default {
   [RECEIVE_FIRSTVIEW] (state,{firstView}) {
     state.firstView = firstView
   },
-  [RECEIVE_CLOTHES] (state,{clothes}) {
-    state.clothes = clothes
+  [RECEIVE_SORTS] (state,{sorts}) {
+    state.sorts = sorts
   },
-  [RECEIVE_FOODS] (state,{foods}) {
-    state.foods = foods
+  [RECEIVE_SHOPCART] (state,{shopCart}) {
+    state.shopCart = shopCart
   },
-  [RECEIVE_HEALTH] (state,{health}) {
-    state.health = health
-  },
-  [RECEIVE_TOYS] (state,{toys}) {
-    state.toys = toys
-  },
-
+  [RECEIVE_MYEPET] (state,{myEpet}) {
+    state.myEpet = myEpet
+  }
 }

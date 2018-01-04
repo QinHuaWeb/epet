@@ -3,15 +3,12 @@ import axios from "axios"
 export function requestFirstView() {
   return axios.get("/api/firstView")
 }
-export function requestClothes() {
-  return axios.get("/api/clothes")
+export function requestSorts() {
+  return axios.get("/api/sorts")
 }
-export function requestFoods() {
-  return axios.get("/api/foods")
+export function requestShopCart() {
+  return axios.get("/api/shopCart")
 }
-export function requestHealth() {
-  return axios.get("/api/health")
-}
-export function requestToys() {
-  return axios.get("/api/toys")
+export function requestMyEpet() {
+  return axios.get("/api/myEpet")
 }

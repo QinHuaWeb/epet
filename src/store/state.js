@@ -1,7 +1,6 @@
 export default {
   firstView: [],
-  clothes: [],
-  foods: [],
-  health: [],
-  toys: []
+  sorts: [],
+  shopCart: [],
+  myEpet: []
 }

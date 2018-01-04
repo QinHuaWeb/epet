@@ -1,10 +1,9 @@
 import Vue from "vue"
 import VueRouter from "vue-router"
 import firstView from "../pages/firstView/firstView.vue"
-import clothes from "../pages/clothes/clothes.vue"
-import foods from "../pages/foods/foods.vue"
-import health from "../pages/health/health.vue"
-import toys from "../pages/toys/toys.vue"
+import sorts from "../pages/sorts/sorts.vue"
+import shopCart from "../pages/shopCart/shopCart.vue"
+import myEpet from "../pages/myEpet/myEpet.vue"
 
 Vue.use(VueRouter)
 
@@ -19,24 +18,16 @@ export default new VueRouter({
       component: firstView
     },
     {
-      path: "/clothes",
-      component: clothes
+      path: "/sorts",
+      component: sorts
     },
     {
-      path: "/foods",
-      component: foods
+      path: "/shopCart",
+      component: shopCart
     },
     {
-      path: "/health",
-      component: health
-    },
-    {
-      path: "/toys",
-      component: toys
-    },
-    {
-      path: "firstView",
-      component: firstView
-    },
+      path: "/myEpet",
+      component: myEpet
+    }
   ]
 })
