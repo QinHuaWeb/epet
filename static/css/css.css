@@ -1,0 +1,5 @@
+/*禁止系统滚动条*/
+html,body{
+  overflow: hidden;
+  height: 100%;
+}

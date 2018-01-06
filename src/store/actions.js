@@ -1,15 +1,15 @@
 import {
   requestFirstView,
-  receive_sorts,
-  receive_shopCart,
-  receive_myEpet
+  // requestSorts,
+  // requestShopCart,
+  // requestMyEpet
 } from "../api"
 
 import {
   RECEIVE_FIRSTVIEW,
-  RECEIVE_SORTS,
-  RECEIVE_SHOPCART,
-  RECEIVE_MYEPET
+  // RECEIVE_SORTS,
+  // RECEIVE_SHOPCART,
+  // RECEIVE_MYEPET
 } from "./mutations-types"
 
 export default {
@@ -22,33 +22,33 @@ export default {
       }
     })
   },
-  requestSorts ({commit}) {
-    requestSorts().then(response => {
-      const result = response.data
-      if (result.code === 0) {
-        const clothes = result.sorts
-        commit(RECEIVE_SORTS,{sorts})
-      }
-    })
-  },
-  requestShopCart ({commit}) {
-    requestShopCart().then(response => {
-      const result = response.data
-      if (result.code === 0) {
-        const shopCart = result.shopCart
-        commit(RECEIVE_SHOPCART,{shopCart})
-      }
-    })
-  },
-  requestMyEpet ({commit}) {
-    requestMyEpet().then(response => {
-      const result = response.data
-      if (result.code === 0) {
-        const myEpet = result.myEpet
-        commit(RECEIVE_MYEPET,{myEpet})
-      }
-    })
-  },
+  // requestSorts ({commit}) {
+  //   requestSorts().then(response => {
+  //     const result = response.data
+  //     if (result.code === 0) {
+  //       const sorts = result.sorts
+  //       commit(RECEIVE_SORTS,{sorts})
+  //     }sorts
+  //   })
+  // },
+  // requestShopCart ({commit}) {
+  //   requestShopCart().then(response => {
+  //     const result = response.data
+  //     if (result.code === 0) {
+  //       const shopCart = result.shopCart
+  //       commit(RECEIVE_SHOPCART,{shopCart})
+  //     }
+  //   })
+  // },
+  // requestMyEpet ({commit}) {
+  //   requestMyEpet().then(response => {
+  //     const result = response.data
+  //     if (result.code === 0) {
+  //       const myEpet = result.myEpet
+  //       commit(RECEIVE_MYEPET,{myEpet})
+  //     }
+  //   })
+  // },
 }
 
 // 发送ajax请求，但写在api中，api是用来前后台交互的

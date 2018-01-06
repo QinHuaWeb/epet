@@ -1,6 +1,7 @@
 export default {
   firstView: [],
-  sorts: [],
-  shopCart: [],
-  myEpet: []
+
+  // sorts: {},
+  // shopCart: [],
+  // myEpet: []
 }
