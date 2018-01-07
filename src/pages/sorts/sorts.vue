@@ -18,27 +18,7 @@
       </div>
       <router-view/>
     </div>
-
     <div class="line">
-    </div>
-
-    <RightItem/>
-    <div class="sort">
-      <ul>
-        <li class="on">为您推荐</li>
-        <li class="on">为您推荐</li>
-        <li class="on">为您推荐</li>
-        <li class="on">为您推荐</li>
-        <li class="on">为您推荐</li>
-        <li class="on">为您推荐</li>
-        <li class="on">为您推荐</li>
-        <li class="on">为您推荐</li>
-        <li class="on">为您推荐</li>
-        <li class="on">为您推荐</li>
-        <li class="on">为您推荐</li>
-        <li class="on">为您推荐</li>
-        <li class="on">为您推荐</li>
-      </ul>
     </div>
   </div>
 </template>
@@ -149,21 +129,4 @@
     position absolute
     top 40px
     left 0
-  .sort
-    margin-top 45px
-    ul
-      box-sizing: border-box;
-      font-size: 14px;
-      overflow hidden
-      li
-        padding: 15px 0;
-        border-bottom: 1px solid #f3f4f5;
-        width: 70px;
-        height: 50px;
-        font-size: 13px;
-        text-align: center;
-        box-sizing: border-box;
-    // 点击时li的样式
-    //     background: #f3f4f5;
-    //     color: #ed4044;
 </style>

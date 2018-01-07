@@ -1,57 +1,76 @@
 <template>
-  <div class="sortTotals">
-    <div class="sortTotals2">
-      <a class="sortMethod" href="">热门分类</a>
+  <div>
+    <div class="sort">
       <ul>
-        <li>
-          <a href="">
-            <div class="sortSingle">
-              <img src="./img1.jpg" alt="">
-            </div>
-            <p>磨牙洁牙</p>
-          </a>
-        </li>
-        <li>
-          <a href="">
-            <div class="sortSingle">
-              <img src="./img1.jpg" alt="">
-            </div>
-            <p>磨牙洁牙</p>
-          </a>
-        </li>
-        <li>
-          <a href="">
-            <div class="sortSingle">
-              <img src="./img1.jpg" alt="">
-            </div>
-            <p>磨牙洁牙</p>
-          </a>
-        </li>
-        <li>
-          <a href="">
-            <div class="sortSingle">
-              <img src="./img1.jpg" alt="">
-            </div>
-            <p>磨牙洁牙</p>
-          </a>
-        </li>
-        <li>
-          <a href="">
-            <div class="sortSingle">
-              <img src="./img1.jpg" alt="">
-            </div>
-            <p>磨牙洁牙</p>
-          </a>
-        </li>
-        <li>
-          <a href="">
-            <div class="sortSingle">
-              <img src="./img1.jpg" alt="">
-            </div>
-            <p>磨牙洁牙</p>
-          </a>
-        </li>
+        <li class="on">为您推荐</li>
+        <li class="on">为您推荐</li>
+        <li class="on">为您推荐</li>
+        <li class="on">为您推荐</li>
+        <li class="on">为您推荐</li>
+        <li class="on">为您推荐</li>
+        <li class="on">为您推荐</li>
+        <li class="on">为您推荐</li>
+        <li class="on">为您推荐</li>
+        <li class="on">为您推荐</li>
+        <li class="on">为您推荐</li>
+        <li class="on">为您推荐</li>
+        <li class="on">为您推荐</li>
       </ul>
+    </div>
+    <div class="sortTotals">
+      <div class="sortTotals2">
+        <a class="sortMethod" href="">热门分类</a>
+        <ul>
+          <li>
+            <a href="">
+              <div class="sortSingle">
+                <img src="./img1.jpg" alt="">
+              </div>
+              <p>磨牙洁牙</p>
+            </a>
+          </li>
+          <li>
+            <a href="">
+              <div class="sortSingle">
+                <img src="./img1.jpg" alt="">
+              </div>
+              <p>磨牙洁牙</p>
+            </a>
+          </li>
+          <li>
+            <a href="">
+              <div class="sortSingle">
+                <img src="./img1.jpg" alt="">
+              </div>
+              <p>磨牙洁牙</p>
+            </a>
+          </li>
+          <li>
+            <a href="">
+              <div class="sortSingle">
+                <img src="./img1.jpg" alt="">
+              </div>
+              <p>磨牙洁牙</p>
+            </a>
+          </li>
+          <li>
+            <a href="">
+              <div class="sortSingle">
+                <img src="./img1.jpg" alt="">
+              </div>
+              <p>磨牙洁牙</p>
+            </a>
+          </li>
+          <li>
+            <a href="">
+              <div class="sortSingle">
+                <img src="./img1.jpg" alt="">
+              </div>
+              <p>磨牙洁牙</p>
+            </a>
+          </li>
+        </ul>
+      </div>
     </div>
   </div>
 </template>
@@ -65,6 +84,23 @@
 </script>
 
 <style lang="stylus" rel="stylesheet/stylus">
+  .sort
+    margin-top 45px
+    ul
+      box-sizing: border-box;
+      font-size: 14px;
+      overflow hidden
+      li
+        padding: 15px 0;
+        border-bottom: 1px solid #f3f4f5;
+        width: 70px;
+        height: 50px;
+        font-size: 13px;
+        text-align: center;
+        box-sizing: border-box;
+  // 点击时li的样式
+  //     background: #f3f4f5;
+  //     color: #ed4044;
   .sortTotals
     width 305px
     box-sizing: border-box;

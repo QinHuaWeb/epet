@@ -23,7 +23,7 @@
           </p>
           <img src="">
         </div>
-        <div class="nav">
+        <div class="nav" ref="nav2">
           <ul>
             <li><a href="">首页</a></li>
             <li><a href="">服饰城</a></li>
@@ -36,82 +36,86 @@
         </div>
       </div>
     </div>
-    <div class="content">
-      <mt-swipe :auto="2000" class="banner_item">
-        <mt-swipe-item><img src="./img1.jpg" alt=""></mt-swipe-item>
-        <mt-swipe-item><img src="./img2.jpg" alt=""></mt-swipe-item>
-        <mt-swipe-item><img src="./img3.jpg" alt=""></mt-swipe-item>
-        <mt-swipe-item><img src="./img4.jpg" alt=""></mt-swipe-item>
-        <mt-swipe-item><img src="./img5.jpg" alt=""></mt-swipe-item>
-        <mt-swipe-item><img src="./img6.jpg" alt=""></mt-swipe-item>
-      </mt-swipe>
-      <div class="arraySorts">
-        <ul class="tenSorts">
-          <li class="f1"><a href=""><img src="./img7.jpg" alt=""></a></li>
-          <li class="f1"><a href=""><img src="./img7.jpg" alt=""></a></li>
-          <li class="f1"><a href=""><img src="./img7.jpg" alt=""></a></li>
-          <li class="f1"><a href=""><img src="./img7.jpg" alt=""></a></li>
-          <li class="f1"><a href=""><img src="./img7.jpg" alt=""></a></li>
-          <li class="f1"><a href=""><img src="./img7.jpg" alt=""></a></li>
-          <li class="f1"><a href=""><img src="./img7.jpg" alt=""></a></li>
-          <li class="f1"><a href=""><img src="./img7.jpg" alt=""></a></li>
-          <li class="f1"><a href=""><img src="./img7.jpg" alt=""></a></li>
-          <li class="f1"><a href=""><img src="./img7.jpg" alt=""></a></li>
-        </ul>
-      </div>
-      <split class="split"/>
-      <div class="swiper-wrapper">
-        <a href="">
-          <img src="./img8.gif" alt="">
-        </a>
-      </div>
-      <div class="crazyDay">
-        <div class="crazy">
-          <div class="crazyImg">
-            <img src="" >
-          </div>
-          <div class="timeLeft">
-            据本场结束
-          </div>
-          <div class="timing">
-            <div class="timing2">
-              <span class="t1"></span>
-              <span class="t2"></span>
-              <span class="t3"></span>
-              <span class="t4"></span>
-              <span class="t5"></span>
-            </div>
-          </div>
-          <div class="crazyMore" >
-            <a href="">
-              <img src="" alt="">
-            </a>
-          </div>
+    <div class="wrapper" ref="wrapper">
+      <div class="content">
+        <mt-swipe :auto="2000" class="banner_item">
+          <mt-swipe-item><img src="./img1.jpg" alt=""></mt-swipe-item>
+          <mt-swipe-item><img src="./img2.jpg" alt=""></mt-swipe-item>
+          <mt-swipe-item><img src="./img3.jpg" alt=""></mt-swipe-item>
+          <mt-swipe-item><img src="./img4.jpg" alt=""></mt-swipe-item>
+          <mt-swipe-item><img src="./img5.jpg" alt=""></mt-swipe-item>
+          <mt-swipe-item><img src="./img6.jpg" alt=""></mt-swipe-item>
+
+          <!--<mt-swipe-item><img src="firstView[0].value[2].image" alt=""></mt-swipe-item>-->
+        </mt-swipe>
+        <div class="arraySorts">
+          <ul class="tenSorts">
+            <li class="f1"><a href=""><img src="./img7.jpg" alt=""></a></li>
+            <li class="f1"><a href=""><img src="./img7.jpg" alt=""></a></li>
+            <li class="f1"><a href=""><img src="./img7.jpg" alt=""></a></li>
+            <li class="f1"><a href=""><img src="./img7.jpg" alt=""></a></li>
+            <li class="f1"><a href=""><img src="./img7.jpg" alt=""></a></li>
+            <li class="f1"><a href=""><img src="./img7.jpg" alt=""></a></li>
+            <li class="f1"><a href=""><img src="./img7.jpg" alt=""></a></li>
+            <li class="f1"><a href=""><img src="./img7.jpg" alt=""></a></li>
+            <li class="f1"><a href=""><img src="./img7.jpg" alt=""></a></li>
+            <li class="f1"><a href=""><img src="./img7.jpg" alt=""></a></li>
+          </ul>
         </div>
-      </div>
-      <split class="split"/>
-      <div class="echong">
-        <a href="">
-          <img src="./m12.jpg" alt="">
-        </a>
-      </div>
-      <split class="split"/>
-      <div class="guoji">
-        <div class="guojiLeft">
+        <split class="split"/>
+        <div class="swiper-wrapper">
           <a href="">
-            <img src="./m13.jpg" alt="">
+            <img src="./img8.gif" alt="">
           </a>
         </div>
-        <div class="guojiRight">
-          <div class="guojiRight1">
+        <div class="crazyDay">
+          <div class="crazy">
+            <div class="crazyImg">
+              <img src="" >
+            </div>
+            <div class="timeLeft">
+              据本场结束
+            </div>
+            <div class="timing">
+              <div class="timing2">
+                <span class="t1"></span>
+                <span class="t2"></span>
+                <span class="t3"></span>
+                <span class="t4"></span>
+                <span class="t5"></span>
+              </div>
+            </div>
+            <div class="crazyMore" >
+              <a href="">
+                <img src="" alt="">
+              </a>
+            </div>
+          </div>
+        </div>
+        <split class="split"/>
+        <div class="echong">
+          <a href="">
+            <img src="./m12.jpg" alt="">
+          </a>
+        </div>
+        <split class="split"/>
+        <div class="guoji">
+          <div class="guojiLeft">
             <a href="">
-              <img src="./m14.jpg" alt="">
+              <img src="./m13.jpg" alt="">
             </a>
           </div>
-          <div class="guojiRight2">
-            <a href="">
-              <img src="./m14.jpg" alt="">
-            </a>
+          <div class="guojiRight">
+            <div class="guojiRight1">
+              <a href="">
+                <img src="./m14.jpg" alt="">
+              </a>
+            </div>
+            <div class="guojiRight2">
+              <a href="">
+                <img src="./m14.jpg" alt="">
+              </a>
+            </div>
           </div>
         </div>
       </div>
@@ -120,6 +124,7 @@
 </template>
 <script>
   import axios from "axios"
+  import BScroll from 'better-scroll'
   export default {
     mounted () {
       // 在mounted中使用axios发送ajax请求获取后台提供的数据
@@ -130,15 +135,23 @@
         })
       // 通过vuex发送ajax请求获取数据，并更新状态
       this.$store.dispatch("requestFirstView")
+
+      // better-scroller的使用
+      this.$nextTick(() => {
+        this.scroll = new BScroll(this.$refs.wrapper, {})
+      })
+//      this.$nextTick(() => {
+//        this.scroll = new BScroll(this.$refs.nav2, {})
+//      })
     }
   }
 </script>
 
 <style lang="stylus" rel="stylesheet/stylus">
   .header
-    margin 0 auto
     position fixed
     left 0
+    right 0
     top 0
     z-index 40
     background-color #ffffff
@@ -246,87 +259,41 @@
             a
               width 74px
               height 100%
-  .content
-    margin-top 142px
-    .banner_item
-      width 375px
-      height 160px
-      margin 0 auto
-      img
-        width 100%
-        height 100%
-    .arraySorts
-      width 375px
-      height 190px
-      margin 0 auto
-      .tenSorts
-        width 100%
-        height 100%
-        li
-          width 20%
-          height 95px
-          float left
-          a
-            width 100%
-            height 100%
-            img
+  .wrapper
+    width 375px
+    height 470px
+    background-color #02a774
+    margin 0 auto
+    .content
+      margin-top 142px
+      .banner_item
+        width 375px
+        height 160px
+        margin 0 auto
+        img
+          width 100%
+          height 100%
+      .arraySorts
+        width 375px
+        height 190px
+        margin 0 auto
+        .tenSorts
+          width 100%
+          height 100%
+          li
+            width 20%
+            height 95px
+            float left
+            a
               width 100%
               height 100%
-    .swiper-wrapper
-      width 375px
-      height 120px
-      margin 0 auto
-      a
-        width 100%
-        height 100%
-        display block
-        img
-          width 100%
-          height 100%
-    .crazyDay
-      width 375px
-      height 190px
-      margin 0 auto
-      .crazy
+              img
+                width 100%
+                height 100%
+      .swiper-wrapper
         width 375px
-        height 60px
-        position: relative
-        padding 10px
-        overflow hidden
-        box-sizing border-box
-        .crazyImg
-          float left
-          img
-            height: 85px
-            height: 24px
-            margin-left: -20px
-            display: block
-            vertical-align: middle
-            box-sizing border-box
-    .echong
-      width 375px
-      height 185px
-      margin 0 auto
-      a
-        width 100%
-        height 100%
-        display block
-        background-color #f4f4f4
-        color: #333;
-        img
-          width 100%
-          height 100%
-          display: block;
-          vertical-align: middle;
-    .guoji
-      width 375px
-      height 250px
-      margin 0 auto
-      overflow hidden
-      .guojiLeft
-        width 50%
-        height 100%
-        float left
+        height 120px
+        margin 0 auto
         a
           width 100%
           height 100%
@@ -334,36 +301,87 @@
           img
             width 100%
             height 100%
-            display: block;
-            vertical-align: middle;
-      .guojiRight
-        width 50%
-        height 50%
-        float left
-        .guojiRight1
-          width 100%
-          height 50%
-          a
+      .crazyDay
+        width 375px
+        height 190px
+        margin 0 auto
+        .crazy
+          width 375px
+          height 60px
+          position: relative
+          padding 10px
+          overflow hidden
+          box-sizing border-box
+          .crazyImg
+            float left
+            img
+              height: 85px
+              height: 24px
+              margin-left: -20px
+              display: block
+              vertical-align: middle
+              box-sizing border-box
+      .echong
+        width 375px
+        height 185px
+        margin 0 auto
+        a
           width 100%
           height 100%
           display block
+          background-color #f4f4f4
+          color: #333;
           img
             width 100%
             height 100%
             display: block;
             vertical-align: middle;
-        .guojiRight2
-          width 100%
-          height 50%
-          a
-          width 100%
+      .guoji
+        width 375px
+        height 250px
+        margin 0 auto
+        overflow hidden
+        .guojiLeft
+          width 50%
           height 100%
-          display block
-          img
+          float left
+          a
             width 100%
             height 100%
-            display: block;
-            vertical-align: middle;
+            display block
+            img
+              width 100%
+              height 100%
+              display: block;
+              vertical-align: middle;
+        .guojiRight
+          width 50%
+          height 50%
+          float left
+          .guojiRight1
+            width 100%
+            height 50%
+            a
+            width 100%
+            height 100%
+            display block
+            img
+              width 100%
+              height 100%
+              display: block;
+              vertical-align: middle;
+          .guojiRight2
+            width 100%
+            height 50%
+            a
+            width 100%
+            height 100%
+            display block
+            img
+              width 100%
+              height 100%
+              display: block;
+              vertical-align: middle;
 
 
 </style>
